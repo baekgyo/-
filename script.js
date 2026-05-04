@@ -46,6 +46,7 @@ const sinnerData = {
         { name: "흑수 - 묘 필두", rank: 3, img: "02_faust_kuro.png" },
         { name: "동부 시 협회 3과", rank: 3, img: "02_faust_shi.png" },
         { name: "검지 수행자:【쪽지】", rank: 3, img: "02_faust_index.png" }
+        {name: "거미집 약지 제자 파우스트", rank: 3, img: "02_faust_ring.png"}
     ],
     "돈키호테": [
         { name: "LCB 수감자", rank: 1, img: "03_don_base.png" },
@@ -94,6 +95,7 @@ const sinnerData = {
         { name: "동부 엄지 카포 IIII", rank: 3, img: "05_meursault_thumb.png" },
         { name: "라만차랜드 왕자", rank: 3, img: "05_meursault_lamancha.png" },
         { name: "로보토미 E.G.O::호넷【변조】", rank: 3, img: "05_meursault_hornet.png" }
+        { name: "약지 야수파 스튜던트 뫼르소", rank: 3, img: "05_meursault_ring.png" }
     ],
     "홍루": [
         { name: "LCB 수감자", rank: 1, img: "06_hong_lu_base.png" },
@@ -109,6 +111,7 @@ const sinnerData = {
         { name: "마침표 사무소 대표", rank: 3, img: "06_hong_lu_fullstop.png" },
         { name: "R사 제 4무리 순록팀", rank: 3, img: "06_hong_lu_reindeer.png" },
         { name: "홍원 군주", rank: 3, img: "06_hong_lu_hongyeon.png" }
+        { name: "거미집 약지 아비 홍루", rank: 3, img: "06_honglu_ring.png" }
     ],
     "히스클리프": [
         { name: "LCB 수감자", rank: 1, img: "07_heath_base.png" },
@@ -125,6 +128,7 @@ const sinnerData = {
         { name: "흑운회 와카슈", rank: 3, img: "07_heath_kurokumo.png" },
         { name: "W사 4등급 정리 요원 - CCA", rank: 3, img: "07_heath_w.png" },
         { name: "흑수 - 유 필두", rank: 3, img: "07_heath_kuro.png" }
+        { name: "중지 작은형님 히스클리프", rank: 3, img: "05_heath_middle.png" }
     ],
     "이스마엘": [
         { name: "LCB 수감자", rank: 1, img: "08_ish_base.png" },
@@ -157,6 +161,7 @@ const sinnerData = {
         { name: "흑수 - 사", rank: 3, img: "09_rodion_kuro.png" },
         { name: "로보토미 E.G.O::눈물로 벼려낸 검", rank: 3, img: "09_rodion_efflorescence.png" },
         { name: "R사 제 4무리 순록팀", rank: 3, img: "09_rodion_reindeer.png" }
+        { name: "약지 야수파 도슨트 로쟈", rank: 3, img: "09_rodion_ring.png" }
     ],
     "싱클레어": [
         { name: "LCB 수감자", rank: 1, img: "10_sinclair_base.png" },
