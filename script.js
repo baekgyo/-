@@ -128,7 +128,7 @@ const sinnerData = {
         { name: "흑운회 와카슈", rank: 3, img: "07_heath_kurokumo.png" },
         { name: "W사 4등급 정리 요원 - CCA", rank: 3, img: "07_heath_w.png" },
         { name: "흑수 - 유 필두", rank: 3, img: "07_heath_kuro.png" },
-        { name: "중지 작은형님 히스클리프", rank: 3, img: "05_heath_middle.png" }
+        { name: "중지 작은형님 히스클리프", rank: 3, img: "07_heath_middle.png" }
     ],
     "이스마엘": [
         { name: "LCB 수감자", rank: 1, img: "08_ish_base.png" },
