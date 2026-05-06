@@ -166,3 +166,46 @@ body {
     letter-spacing: 0.5px;
     font-family: 'Malgun Gothic', sans-serif;
 }
+
+/* 기존 스타일 아래에 추가 */
+.ego-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 2000;
+    justify-content: center; align-items: center;
+}
+.ego-card-view {
+    background: #1a1a1a;
+    border: 2px solid #ffc400;
+    width: 260px; padding: 15px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255,196,0,0.5);
+}
+#ego-sinner-name {
+    color: #ffc400; text-align: center;
+    margin-bottom: 15px; border-bottom: 1px solid #ffc400;
+    padding-bottom: 10px; font-size: 18px;
+}
+.ego-list-item {
+    display: flex; align-items: center;
+    height: 40px; margin: 8px 0;
+    border: 1px solid #444; padding: 0 10px;
+    font-size: 14px; font-weight: bold;
+    background: linear-gradient(90deg, rgba(255,196,0,0.05) 0%, transparent 100%);
+}
+.ego-symbol { width: 25px; color: #ffc400; font-size: 18px; margin-right: 10px; }
+.ego-name { flex: 1; color: #eee; }
+
+/* 등급별 왼쪽 테두리 색상 */
+.grade-zayin { border-left: 5px solid #ffffff; }
+.grade-teth { border-left: 5px solid #ffc400; }
+.grade-he { border-left: 5px solid #00bbff; }
+.grade-waw { border-left: 5px solid #ff00cc; }
+.grade-aleph { border-left: 5px solid #ff0000; }
+
+.close-ego {
+    position: absolute; top: -35px; right: 0;
+    color: #ffc400; cursor: pointer; font-weight: bold;
+}
