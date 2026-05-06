@@ -6,15 +6,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 배경음악 컨트롤 -->
     <div class="audio-controls">
         <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
         <button id="mute-btn">🔊 ON</button>
     </div>
+    <audio id="bgm" loop><source src="main_bgm.mp3" type="audio/mpeg"></audio>
 
-    <audio id="bgm" loop>
-        <source src="main_bgm.mp3" type="audio/mpeg">
-    </audio>
-
+    <!-- 메인 화면 -->
     <div id="main-screen" class="container">
         <div class="main-window">
             <div class="main-logo-area">
@@ -28,6 +27,7 @@
         </div>
     </div>
 
+    <!-- 게임 화면 -->
     <div id="game-screen" class="container hidden">
         <div class="extract-window">
             <h2 class="extract-title">랜덤 인격 룰렛</h2>
@@ -42,12 +42,26 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-<footer class="footer-info">
+    <!-- 에고 상세 모달 -->
+    <div id="ego-modal" class="ego-modal" onclick="closeEgoModal()">
+        <div class="ego-card-view" onclick="event.stopPropagation()">
+            <div class="close-ego">아무곳이나 눌러 닫기 [X]</div>
+            <h3 id="ego-sinner-name">수감자 장착 에고</h3>
+            <div id="ego-content"></div>
+        </div>
+    </div>
+
+    <!-- 푸터 정보 (추가됨) -->
+    <footer class="footer-info">
         <p>본 사이트는 팬 메이드 프로젝트이며, 모든 게임 리소스의 권리는 Project Moon에 있습니다.</p>
     </footer>
 
+    <!-- 버전 표시 (추가됨) -->
+    <div style="position: fixed; bottom: 10px; right: 15px; color: rgba(255,255,255,0.2); font-size: 11px; font-weight: bold; font-family: monospace; z-index: 999; pointer-events: none;">
+        Ver 1.20
+    </div>
+
+    <script src="sinners.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
