@@ -117,7 +117,7 @@ const identities = [
     { no: 1, name: 'LCB 수감자 히스클리프', code: 'base', rank: 1 },
     { no: 2, name: '남부 시 협회 5과 히스클리프', code: 'shi', rank: 2 },
     { no: 3, name: 'R사 제 4무리 토끼팀 히스클리프', code: 'rabbit', rank: 3 },
-    { no: 4, name: 'N사 작은 망치 히스클리프', code: 'ncorp_small', rank: 2 },
+    { no: 4, name: 'N사 작은 망치 히스클리프', code: 'ncorp', rank: 2 },
     { no: 5, name: '로보토미 E.G.O:: 여우비 히스클리프', code: 'sunshower', rank: 3 },
     { no: 6, name: '남부 세븐 협회 4과 히스클리프', code: 'seven', rank: 2 },
     { no: 7, name: '피쿼드호 작살잡이 히스클리프', code: 'pequod', rank: 3 },
