@@ -37,6 +37,7 @@
                 <span id="filter-3star" class="cat">3성만</span>
             </div>
             <button id="spin-all-btn" class="extract-action-btn">추출 시작!</button>
+            <button id="copy-deck-btn" class="extract-action-btn" style="display:none; margin-left:10px; background:#c0be52;">덱 코드 복사</button>
             <div id="sinner-grid" class="sinner-display"></div>
             <button id="go-back" class="back-link">처음으로</button>
         </div>
@@ -58,9 +59,10 @@
 
     <!-- 버전 표시 (추가됨) -->
     <div style="position: fixed; bottom: 10px; right: 15px; color: rgba(255,255,255,0.2); font-size: 11px; font-weight: bold; font-family: monospace; z-index: 999; pointer-events: none;">
-        Ver 1.20
+        Ver 1.80
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
     <script src="sinners.js"></script>
     <script src="script.js"></script>
 </body>
