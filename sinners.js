@@ -78,7 +78,8 @@ const identities = [
     { no: 11, name: '흑수 - 묘 료슈', code: 'kuro', rank: 3 },
     { no: 12, name: 'N사 E.G.O::경멸, 경외 료슈', code: 'ncorp', rank: 3 },
     { no: 13, name: '홍원 방랑무사 료슈', code: 'hongyeon', rank: 3 },
-    { no: 14, name: '로보토미 E.G.O::잔향 · 외로움 료슈', code: 'reverberation', rank: 3 }
+    { no: 14, name: '로보토미 E.G.O::잔향 · 외로움 료슈', code: 'reverberation', rank: 3 },
+    { no: 15, name: '거미집의 검 로슈', code: 'index', rank: 3 }
   ],
   [ // 4: 뫼르소
     { no: 1, name: 'LCB 수감자 뫼르소', code: 'base', rank: 1 },
