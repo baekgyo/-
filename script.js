@@ -92,6 +92,7 @@ document.getElementById('spin-all-btn').onclick = function() {
 
                 if (finished === sinners.length) {
                     this.disabled = false;
+                    document.getElementById('copy-deck-btn').style.display = 'inline-block';
                 }
             }
         }, 80);
@@ -139,3 +140,91 @@ document.getElementById('filter-3star').onclick = function() {
     document.getElementById('filter-all').classList.remove('active'); 
 };
 document.getElementById('go-back').onclick = () => location.reload();
+
+function setBits(bitArray, start, end, value) {
+    // start: 시작 비트 번호 (1부터 시작하는 규격 기준)
+    // end: 끝 비트 번호
+    // 실제 배열 인덱스는 (번호 - 1)
+    let length = end - start + 1;
+    let binaryValue = value.toString(2).padStart(length, '0');
+    
+    for (let i = 0; i < binaryValue.length; i++) {
+        bitArray[(start - 1) + i] = binaryValue[i];
+    }
+}
+
+function generateRawBitString() {
+    let totalBits = new Array(560).fill('0');
+
+    sinners.forEach((s, i) => {
+        let startBit = i * 46; 
+
+        // 1. 인격 찾기: 이미지 파일명이 아니라 '텍스트 이름'으로 찾기
+        const label = document.getElementById(`slot-${s.id}`).nextElementSibling;
+        const currentName = label.innerText; // 예: "서부 츠바이 협회 3과 싱클레어"
+        
+        // identities[i] 배열에서 이름이 똑같은 인격을 찾음
+        const idyIdx = identities[i].findIndex(idy => idy.name === currentName) + 1;
+
+        // 인격 순서 (5~8비트) & 편성 순서 (9~12비트)
+        setBits(totalBits, startBit + 5, startBit + 8, idyIdx > 0 ? idyIdx : 1);
+        setBits(totalBits, startBit + 9, startBit + 12, i + 1);
+
+        // 2. 에고 정보 (no 값 활용)
+        const egoSet = fixedEgos[s.id];
+        const egoData = sinnerEgoList[i];
+
+        if (egoSet && egoData) {
+            const getEgoNo = (gradeIdx, egoName) => {
+                if (!egoName || egoName === "-") return 0;
+                const found = egoData[gradeIdx].find(e => e.name === egoName);
+                return found ? found.no : 0;
+            };
+
+            setBits(totalBits, startBit + 16, startBit + 19, getEgoNo(0, egoSet[0])); // ZAYIN
+            setBits(totalBits, startBit + 23, startBit + 26, getEgoNo(1, egoSet[1])); // TETH
+            setBits(totalBits, startBit + 30, startBit + 33, getEgoNo(2, egoSet[2])); // HE
+            setBits(totalBits, startBit + 37, startBit + 40, getEgoNo(3, egoSet[3])); // WAW
+        }
+    });
+
+    return totalBits.join("");
+}
+
+document.getElementById('copy-deck-btn').onclick = function() {
+    try {
+        const bitString = generateRawBitString();
+        
+        // 1. 비트 문자열(560자)을 8개씩 끊어서 바이트로 변환
+        let byteArray = new Uint8Array(bitString.length / 8);
+        for (let i = 0; i < bitString.length; i += 8) {
+            byteArray[i / 8] = parseInt(bitString.substring(i, i + 8), 2);
+        }
+
+        // 2. 바이트 배열 -> Base64 (1차)
+        // btoa는 문자열을 받으므로 변환 과정 필요
+        let binaryStr = "";
+        for (let i = 0; i < byteArray.length; i++) {
+            binaryStr += String.fromCharCode(byteArray[i]);
+        }
+        let b64_1 = btoa(binaryStr);
+        
+        // 3. Gzip 압축 (문자열 b64_1을 압축해야 함)
+        const encoder = new TextEncoder();
+        const compressed = pako.gzip(encoder.encode(b64_1)); 
+        
+        // 4. 최종 Base64 변환
+        let finalBinary = "";
+        for (let i = 0; i < compressed.length; i++) {
+            finalBinary += String.fromCharCode(compressed[i]);
+        }
+        let finalDeckCode = btoa(finalBinary);
+
+        navigator.clipboard.writeText(finalDeckCode).then(() => {
+            alert("덱 코드가 복사되었습니다!");
+        });
+    } catch (e) {
+        console.error(e);
+        alert("코드 생성 실패: " + e.message);
+    }
+};
