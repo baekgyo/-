@@ -109,7 +109,7 @@ function showFixedEgoDetails(sinnerId, sinnerName) {
     content.innerHTML = '';
     
     const egoSet = fixedEgos[sinnerId];
-    const gradeSymbols = ['T', 'D', 'H', 'W', 'A']; 
+    const gradeSymbols = ['Z', 'T', 'H', 'W', 'A']; 
     const gradeNames = ['zayin', 'teth', 'he', 'waw', 'aleph'];
 
     egoSet.forEach((egoName, i) => {
