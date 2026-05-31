@@ -196,7 +196,8 @@ const identities = [
     { no: 11, name: '라만차랜드 이발사 오티스', code: 'barber', rank: 3 },
     { no: 12, name: '흑수 - 묘 오티스', code: 'kuro', rank: 3 },
     { no: 13, name: 'T사 3등급 강력징수직 직원 오티스', code: 'tcorp', rank: 3 },
-    { no: 14, name: 'LCA 우제트 선봉 3팀 팀장 오티스', code: 'udjat', rank: 3 }
+    { no: 14, name: 'LCA 우제트 선봉 3팀 팀장 오티스', code: 'udjat', rank: 3 },
+    { no: 15, name: '거미집 중지 아비 오티스', code: 'middle', rank: 3 }
   ],
   [ // 11: 그레고르
     { no: 1, name: 'LCB 수감자 그레고르', code: 'base', rank: 1 },
