@@ -112,7 +112,8 @@ const identities = [
     { no: 11, name: '마침표 사무소 대표 홍루', code: 'fullstop', rank: 3 },
     { no: 12, name: 'R사 제 4무리 순록팀 홍루', code: 'reindeer', rank: 3 },
     { no: 13, name: '홍원 군주 홍루', code: 'hongyeon', rank: 3 },
-    { no: 14, name: '거미집 약지 아비 홍루', code: 'ring', rank: 3 }
+    { no: 14, name: '거미집 약지 아비 홍루', code: 'ring', rank: 3 },
+    { no: 15, name: 'S사 추노꾼 홍루', code: 'scorp', rank: 3 }
   ],
   [ // 6: 히스클리프
     { no: 1, name: 'LCB 수감자 히스클리프', code: 'base', rank: 1 },
@@ -145,7 +146,8 @@ const identities = [
     { no: 11, name: '흑운회 부조장 이스마엘', code: 'kurokumo', rank: 3 },
     { no: 12, name: '가주 후보 이스마엘', code: 'heir', rank: 3 },
     { no: 13, name: '정사무소 대표 이스마엘', code: 'office', rank: 3 },
-    { no: 14, name: '거미집 중지 제자 이스마엘', code: 'middle', rank: 3 }
+    { no: 14, name: '거미집 중지 제자 이스마엘', code: 'middle', rank: 3 },
+    { no: 15, name: 'LCD 현장추리팀 이스마엘', code: 'lcd', rank: 3 }
   ],
   
   [ // 8: 로쟈
@@ -314,7 +316,8 @@ const sinnerEgoList = [
     ],
     [ // HE
       { no: 3, name: '집행' },
-      { no: 4, name: '카포테' }
+      { no: 4, name: '카포테' },
+      { no: 9, name: '착영휘도' }
     ],
     [ // WAW
       { no: 7, name: '갈망 - 미르칼라' },
