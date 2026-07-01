@@ -130,7 +130,8 @@ const identities = [
     { no: 12, name: '흑운회 와카슈 히스클리프', code: 'kurokumo', rank: 3 },
     { no: 13, name: 'W사 4등급 정리 요원 - CCA 히스클리프', code: 'w', rank: 3 },
     { no: 14, name: '흑수 - 유 필두 히스클리프', code: 'kuro', rank: 3 },
-    { no: 15, name: '중지 작은 형님 히스클리프', code: 'middle', rank: 3 }
+    { no: 15, name: '중지 작은 형님 히스클리프', code: 'middle', rank: 3 },
+    { no: 16, name: '거미집 엄지 제자 히스클리프', code: 'thumb', rank: 3 }
   ],
   [ // 7: 이스마엘
     { no: 1, name: 'LCB 수감자 이스마엘', code: 'base', rank: 1 },
@@ -165,7 +166,8 @@ const identities = [
     { no: 12, name: '흑수 - 사 로쟈', code: 'kuro', rank: 3 },
     { no: 13, name: '로보토미 E.G.O::눈물로 벼려낸 검 로쟈', code: 'efflorescence', rank: 3 },
     { no: 14, name: 'R사 제 4무리 순록팀 로쟈', code: 'reindeer', rank: 3 },
-    { no: 15, name: '약지 야수파 도슨트 로쟈', code: 'ring', rank: 3 }
+    { no: 15, name: '약지 야수파 도슨트 로쟈', code: 'ring', rank: 3 },
+    { no: 16, name: '거미집 엄지 아비 로쟈', code: 'thumb', rank: 3 }
   ],
   [ // 9: 싱클레어
     { no: 1, name: 'LCB 수감자 싱클레어', code: 'base', rank: 1 },
