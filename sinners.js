@@ -46,7 +46,8 @@ const identities = [
     { no: 12, name: '흑수 - 묘 필두 파우스트', code: 'kuro', rank: 3 },
     { no: 13, name: '동부 시 협회 3과 파우스트', code: 'shi', rank: 3 },
     { no: 14, name: '검지 수행자 파우스트', code: 'index', rank: 3 },
-    { no: 15, name: '거미집 약지 제자 파우스트', code: 'ring', rank: 3 }
+    { no: 15, name: '거미집 약지 제자 파우스트', code: 'ring', rank: 3 },
+    { no: 16, name: '새벽 사무소 해결사 파우스트', code: 'philip', rank: 3 }
   ],
   [ // 2: 돈키호테
     { no: 1, name: 'LCB 수감자 돈키호테', code: 'base', rank: 1 },
@@ -218,7 +219,8 @@ const identities = [
     { no: 12, name: '흑수 - 사 그레고르', code: 'kuro', rank: 3 },
     { no: 13, name: '밤의 송곳 카피타노 그레고르', code: 'stiletto', rank: 3 },
     { no: 14, name: '로보토미 E.G.O::램프 그레고르', code: 'lamp', rank: 3 },
-    { no: 15, name: 'LCE E.G.O::AEDD 그레고르', code: 'aedd', rank: 3 }
+    { no: 15, name: 'LCE E.G.O::AEDD 그레고르', code: 'aedd', rank: 3 },
+    { no: 16, name: '새벽 사무소 대표 그레고르', code: 'philip', rank: 3 }
   ]
 ];
 
@@ -234,7 +236,8 @@ const sinnerEgoList = [
     ],
     [ // HE
       { no: 4, name: '차원찢개' },
-      { no: 7, name: '흉탄' }
+      { no: 7, name: '흉탄' },
+      { no: 9, name: '엄숙한 애도 이상' }
     ],
     [ // WAW
       { no: 5, name: '여우비' },
