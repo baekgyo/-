@@ -29,7 +29,9 @@ const identities = [
     { no: 12, name: '남부 리우 협회 3과 이상', code: 'liu', rank: 3 },
     { no: 13, name: 'N사 E.G.O:: 흉탄 이상', code: 'ncorp', rank: 3 },
     { no: 14, name: '흑수 - 오 필두 이상', code: 'kuro', rank: 3 },
-    { no: 15, name: '거미집 검지 아비 이상', code: 'index', rank: 3 }
+    { no: 15, name: '거미집 검지 아비 이상', code: 'index', rank: 3 },
+    { no: 16, name: 'LCE E.G.O::차원찢개 이상', code: 'ego', rank: 3 }
+
   ],
   [ // 1: 파우스트
     { no: 1, name: 'LCB 수감자 파우스트', code: 'base', rank: 1 },
@@ -114,7 +116,8 @@ const identities = [
     { no: 12, name: 'R사 제 4무리 순록팀 홍루', code: 'reindeer', rank: 3 },
     { no: 13, name: '홍원 군주 홍루', code: 'hongyeon', rank: 3 },
     { no: 14, name: '거미집 약지 아비 홍루', code: 'ring', rank: 3 },
-    { no: 15, name: 'S사 추노꾼 홍루', code: 'scorp', rank: 3 }
+    { no: 15, name: 'S사 추노꾼 홍루', code: 'scorp', rank: 3 },
+    { no: 16, name: '동부 섕크 협회 3과 홍루', code: 'cinq_3', rank: 3 }
   ],
   [ // 6: 히스클리프
     { no: 1, name: 'LCB 수감자 히스클리프', code: 'base', rank: 1 },
@@ -270,7 +273,8 @@ const sinnerEgoList = [
   ],
   [ // 돈키호테
     [ // ZAYIN
-      { no: 1, name: '라 샹그레 데 산쵸' }
+      { no: 1, name: '라 샹그레 데 산쵸' },
+      { no: 10, name: '난 가위를 낼게, 너는?' }
     ],
     [ // TETH
       { no: 4, name: '평생 스튜' },
